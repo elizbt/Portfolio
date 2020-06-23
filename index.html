@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--- te mostrar oq vamos fzr --->
+    <!---- Vamos fazer por partes... primeiro o header
+     o cabeçalho do site  --->
+
+     <!---- Vou usar oo repl pq precisa de imagens--->
+
+  <!--- Header 
+        ul e li são para fazer listas
+        cada li é um elemento da lista
+        ul fica em torno, funciona parecido com div
+
+        agora vamos estilizar o header
+  --->
+  <header>
+    <h3> Eliz </h3>
+
+    <ul>
+      <li> Sobre </li>
+      <li> Contato </li>
+    </ul>
+  </header>
+
+  <!--- 
+      a parte com a foto, o nome e algumas informações agora
+      main funciona como uma div, mas de forma mais semântica
+  --->
+
+  <main>
+    <div>
+      <h1> Eliz</h1>
+      <p> Meu nome é Elizabeth, tenho xx anos, atualmente moro em Sorocaba - SP
+        Sou uma jovem programadora em busca de conhecimento e novos desafios,
+        programar é chato e estressante mas não desistirei </p>
+      <button> Meu portfólio</button>
+      <p> minhas redes sociais </p>
+      <img src="./assets/github.png" />
+      <img src="./assets/tt.webp" />
+      <img src="./assets/linkedin.png" />
+    </div>
+    <img src="./assets/photo.png" />
+  </main>
+
+  <!--- 
+      agora a ultima parte 
+      section também é como uma div, de forma semântica
+      diferença entre section e main é só de hierarquia
+  --->
+
+  <section>
+    <h2> Serviços </h2>
+
+    <div class="cards">  
+        <div class="card">
+          <p class="title"> HTML </p>
+          <p> Construo sites elegantes utilizando HTML </p>
+        </div>
+
+        <div class="card">
+          <p class="title"> CSS </p>
+          <p> Construo sites bonitos e responsivos utilizando css </p>
+        </div>
+
+        <div class="card">
+          <p class="title"> Javascript </p>
+          <p> Construo sites animados e cheios de efeito utilizando HTML </p>
+        </div>
+
+        <div class="card">
+          <p class="title"> PHP </p>
+          <p> PHP é do demonio </p>
+        </div>
+    </div>
+  </section>
+</body>
+</html>

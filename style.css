@@ -1,0 +1,123 @@
+/* Resetando o css padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* vou colocar alguns estilos por padrão e mudar a fonte padrão
+  como o body ta em volta de tudo, todos os elementos dentro dele vão receber esse estilo
+*/
+
+body {
+  font-family:  Roboto, 'Helvetica Neue', sans-serif;
+}
+
+header {
+  display: flex; /* pra ficar um do lado do outro */
+  justify-content: space-between; /* joga um pra cada lado */
+  padding: 0 20px; /* padding de 0 em cima e em baixo e 12 dos lados */
+  height: 10vh;  /* altura do header */
+  align-items: center; /* alinha os elementos no meio na horizontal */
+}
+
+/* mudar a cor do h3 que definimos no header */
+header h3 {
+  color: rgb(216, 212, 4);
+}
+
+/* agora colocar os elementos da ul um do lado do outro usando display flex */
+
+header ul, li {
+  display: flex;
+  margin: 12px;
+}
+
+/* 
+  Agora vamos estilizar o main,
+  o operador > diz que vai pegar todo elemento dentro da div que seja uma imagem
+  se não usasse o > iria estilizar todas as imagens, inclusive a foto da pessoa.
+*/
+
+main {
+  display: flex;
+  height: auto;
+  background: #eee;
+  justify-content: space-evenly;
+  padding: 20px 0; /* aqui vai ter 20px em cima e em baixo, e 0 dos lados */
+}
+
+
+main > div > img {
+  width: 20px;
+  height: 20px;
+}
+
+main > div {
+  width: 300px;
+}
+
+main > img {
+  width: 120px;
+  height: 270px;
+}
+
+main h1, p, button {
+  margin: 12px 0;
+} 
+
+main p {
+  color: #666;
+}
+
+main button {
+  border: none; /* tira a borda */
+  padding: 8px;
+  background: gold;
+  border-radius: 6px; /* deixa borda arredondada */
+  color: #fff;
+}
+
+/*  :hover indica que vai ser dado um estilo quando passar o mouse em cima */
+main button:hover {
+  background: rgba(255, 217, 0, 0.6);
+  cursor: pointer;
+}
+
+section {
+  text-align: center;
+  margin: 20px 0;
+  padding: 0 10%;
+}
+
+section > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid #eee;
+  margin: 20px;
+  height: 100px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card  p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* como tem dois p dentro do .card um subscreve o outro
+   o comando !important é pra conseguir dizer que aquele elemento vai ser subscrito com aquele estilo
+*/
+.title {
+  color: #000 !important;
+  font-weight: bold !important; /* "grossura da fonte" */
+  font-size: 16px;
+}
+
