@@ -1,3 +1,3 @@
 <h1>Pagina feita em HTML e CSS para estudos</h1>
 
-![Anotação 2020-06-23 181906](https://user-images.githubusercontent.com/67337539/85440965-f7626800-b564-11ea-980c-f2e925c563e6.png)
+![Anotação 2020-06-23 182754](https://user-images.githubusercontent.com/67337539/85442146-37761a80-b566-11ea-8b7d-95855082a533.png)
